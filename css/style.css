@@ -547,6 +547,7 @@ i {
 }
 .nav__logo:hover {
   color: #6e57e0;
+  text-decoration: none;
 }
 .nav__toggle {
   font-size: 1.1rem;
@@ -558,7 +559,7 @@ i {
 @media only screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     background-color: #fbfbfe;
@@ -582,6 +583,7 @@ i {
 }
 .nav__link:hover {
   color: #6e57e0;
+  text-decoration: none;
 }
 .nav__icon {
   font-size: 1.2rem;
@@ -596,6 +598,10 @@ i {
 }
 .nav__close:hover {
   color: #6e57e0;
+}
+
+.show-menu {
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
