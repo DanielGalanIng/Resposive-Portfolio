@@ -214,10 +214,12 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
+  transition: 1s;
 }
 .button:hover {
   background-color: #5a43cb;
   color: rgba(255, 255, 255, 0.9);
+  transition: 300ms;
 }
 .button__icon {
   font-size: 1.25rem;
@@ -239,6 +241,16 @@ img {
 .button--link:hover {
   background-color: transparent;
   color: #5a43cb;
+}
+.button--white {
+  background-color: #FFF;
+  color: #6e57e0;
+  transition: 1s;
+}
+.button--white:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #5a43cb;
+  transition: 500ms;
 }
 
 .about__img {
@@ -567,6 +579,28 @@ img {
 .swiper-button-next,
 .swiper-pagination-bullet {
   outline: none;
+}
+
+.project {
+  text-align: center;
+}
+.project__bg {
+  background-color: #6e57e0;
+  padding-top: 3rem;
+}
+.project__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.project__description {
+  margin-bottom: 1.5rem;
+}
+.project__title, .project__description {
+  color: #FFF;
+}
+.project__img {
+  width: 232px;
+  justify-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
