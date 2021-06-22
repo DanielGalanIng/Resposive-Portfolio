@@ -3,10 +3,3 @@
 /src
 /sass
 /pug
-*.map
-*.jpg
-*.png
-*.svg
-*.pdf
-css/swiper-bundle.min.css
-js/swiper-bundle.min.js
