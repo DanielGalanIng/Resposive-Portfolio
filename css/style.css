@@ -2,7 +2,7 @@
 :root {
   --Hue-color: 250;
   --First-color: hsl(var(--Hue-color), 69%, 61%);
-  --First-color-second: hsl(var(--ue-color,) 69%, 61%);
+  --First-color-second: hsl(var(--Hue-color,) 69%, 61%);
   --First-color-alt: hsl(var(--Hue-color), 57%, 53%);
   --First-color-lighter: hsl(var(--Hue-color), 92%, 85%);
   --Title-color: hsl(var(--Hue-color),8%, 15%);
@@ -11,6 +11,8 @@
   --Input-color: hsl(var(--Hue-color),70%, 96%);
   --Body-color: hsl(var(--Hue-color),60%, 99%);
   --Container-color: #FFF;
+  --Scroll-bar-color: hsl(var(--Hue-color), 12%, 90%);
+  --Scroll-thumb-color: hsl(var(--Hue-color), 12%, 80%);
 }
 
 :root {
@@ -79,6 +81,8 @@ body.dark-theme {
   --Input-color: hsl(var(--Hue-color),29%, 16%);
   --Body-color: hsl(var(--Hue-color),28%, 12%);
   --Container-color: hsl(var(--Hue-color), 29%, 16%);
+  --Scroll-bar-color: hsl(var(--Hue-color), 12%, 48%);
+  --Scroll-thumb-color: hsl(var(--Hue-color), 12%, 36%);
 }
 
 .section {
@@ -804,6 +808,98 @@ body.dark-theme {
 
 .show-scroll {
   bottom: 5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--Scroll-bar-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--Scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--Text-color-light);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nav__menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+  .nav__list {
+    column-gap: 0;
+  }
+
+  .home__content {
+    grid-template-columns: 0.25fr 3fr;
+  }
+  .home__blob {
+    width: 180px;
+  }
+
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qualification__data {
+    gap: 0.5rem;
+  }
+
+  .services__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  .services__content {
+    padding-right: 4rem;
+  }
+  .services__modal {
+    padding: 0 0.5rem;
+  }
+
+  .project__img {
+    width: 200px;
+  }
+
+  .testimonial__data, .testimonial__header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial__img {
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+  }
+  .testimonial__data, .testimonial__description {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home__content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .home__data {
+    grid-column: initial;
+  }
+  .home__img {
+    order: 1;
+    justify-self: center;
+  }
+
+  .about__container, .skills__container, .portfolio__container, .project__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification__sections {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
