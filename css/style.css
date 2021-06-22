@@ -142,6 +142,10 @@ img {
   bottom: 0;
 }
 
+.active-link {
+  color: #6e57e0;
+}
+
 .home__container {
   gap: 1rem;
 }
