@@ -675,4 +675,46 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.footer {
+  padding-top: 2rem;
+}
+.footer__container {
+  row-gap: 3.5rem;
+}
+.footer__bg {
+  background-color: #6e57e0;
+  padding: 2rem 0 3rem;
+}
+.footer__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+.footer__subtitle {
+  font-size: 0.813rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.footer__link:hover {
+  color: #c1b6fc;
+}
+.footer__social {
+  font-size: 1.25rem;
+  margin-right: 1.5rem;
+}
+.footer__social:hover {
+  color: #c1b6fc;
+}
+.footer__copy {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #a19fad;
+  margin-top: 3rem;
+}
+.footer__title, .footer__subtitle, .footer__link, .footer__social {
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
