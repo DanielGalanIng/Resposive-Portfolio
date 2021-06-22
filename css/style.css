@@ -2,7 +2,7 @@
 :root {
   --Hue-color: 250;
   --First-color: hsl(var(--Hue-color), 69%, 61%);
-  --First-color-second: hsl(var(--Hue-color,) 69%, 61%);
+  --First-color-second: hsl(var(--Hue-color), 69%, 61%);
   --First-color-alt: hsl(var(--Hue-color), 57%, 53%);
   --First-color-lighter: hsl(var(--Hue-color), 92%, 85%);
   --Title-color: hsl(var(--Hue-color),8%, 15%);
